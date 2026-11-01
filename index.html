@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品官网</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:system-ui, sans-serif;
+        }
+        body{
+            background: linear-gradient(135deg,#0f172a,#1e293b);
+            color:#f1f5f9;
+        }
+        .container{
+            max-width:1100px;
+            margin:0 auto;
+            padding:0 20px;
+        }
+        header{
+            padding:24px 0;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .logo{
+            font-size:22px;
+            font-weight:bold;
+            color:#38bdf8;
+        }
+        nav a{
+            color:#cbd5e1;
+            text-decoration:none;
+            margin-left:24px;
+            transition:0.2s;
+        }
+        nav a:hover{
+            color:#38bdf8;
+        }
+        .hero{
+            padding:90px 0;
+            text-align:center;
+        }
+        .hero h1{
+            font-size:48px;
+            margin-bottom:20px;
+        }
+        .hero p{
+            color:#94a3b8;
+            font-size:19px;
+            max-width:700px;
+            margin:0 auto 36px;
+            line-height:1.6;
+        }
+        .btn{
+            display:inline-block;
+            padding:16px 36px;
+            background:#38bdf8;
+            color:#020617;
+            text-decoration:none;
+            border-radius:999px;
+            font-weight:bold;
+            box-shadow:0 0 20px #38bdf855;
+            transition:0.3s;
+        }
+        .btn:hover{
+            transform: translateY(-3px);
+            box-shadow:0 0 30px #38bdf877;
+        }
+        .section{
+            padding:70px 0;
+        }
+        .section h2{
+            text-align:center;
+            font-size:30px;
+            margin-bottom:40px;
+        }
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:24px;
+        }
+        .card{
+            background:#1e293b;
+            padding:28px;
+            border-radius:16px;
+            border:1px solid #334155;
+            transition:0.25s;
+        }
+        .card:hover{
+            border-color:#38bdf8;
+            transform: translateY(-4px);
+        }
+        .card h3{
+            font-size:20px;
+            margin-bottom:12px;
+            color:#38bdf8;
+        }
+        .card p{
+            color:#94a3b8;
+            line-height:1.6;
+        }
+        .download-wrap{
+            background:#1e293b;
+            border-radius:20px;
+            padding:50px 20px;
+            text-align:center;
+            margin:0 20px;
+        }
+        .download-wrap p{
+            color:#94a3b8;
+            margin-bottom:30px;
+            font-size:17px;
+        }
+        .contact-wrap{
+            text-align:center;
+            padding:40px 20px;
+        }
+        .contact-wrap p{
+            color:#94a3b8;
+            font-size:17px;
+            line-height:2;
+        }
+        footer{
+            text-align:center;
+            padding:30px;
+            color:#64748b;
+            border-top:1px solid #223044;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="logo">你的产品名称</div>
+        <nav>
+            <a href="#intro">介绍</a>
+            <a href="#feature">功能</a>
+            <a href="#download">下载</a>
+            <a href="#contact">联系</a>
+        </nav>
+    </header>
+
+    <div class="hero container" id="intro">
+        <h1>高性能工具产品</h1>
+        <p>这里写你的产品一句话介绍，简单说明它是干嘛的，有什么优势。</p>
+        <a href="#download" class="btn">立即获取</a>
+    </div>
+
+    <div class="section container" id="feature">
+        <h2>产品功能</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>稳定可靠</h3>
+                <p>运行稳定，低占用，长时间使用不崩溃。</p>
+            </div>
+            <div class="card">
+                <h3>简单易用</h3>
+                <p>上手门槛低，操作直观，新手也能快速学会。</p>
+            </div>
+            <div class="card">
+                <h3>持续更新</h3>
+                <p>长期维护，持续新增功能，及时修复问题。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="download" class="download-wrap">
+        <h2>下载方式</h2>
+        <p>购买后获取卡密，前往卡密验证站点激活使用</p>
+        <a href="#" class="btn">下载安装包</a>
+    </div>
+
+    <div id="contact" class="contact-wrap">
+        <h2>联系我们</h2>
+        <p>QQ：229544570<br>微信：LUZHENHANG-9050</p>
+    </div>
+
+    <footer>
+        © 2026 你的产品名称 | 仅供展示
+    </footer>
+</body>
+</html>
